@@ -1,0 +1,289 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "StrEmailAdress&Sequence_1",
+        "StrBody&Sequence_1",
+        "strFinalReportPath&Sequence_1",
+        "strSubject&Sequence_1",
+        "URL&Sequence_1",
+        "strIMDBCredentials&Sequence_1",
+        "strInputFilePath&Sequence_1",
+        "dtMoviesReport&Sequence_1",
+        "dtMovies&Sequence_1",
+        "boolSignInStatus&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Init Applications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtMovies&Flowchart_2",
+        "io_strInputFilePath&Flowchart_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strIMDBCredentials",
+        "in_strInputFilePath",
+        "io_boolSignInStatus",
+        "out_dtMoviesReport"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Component Template.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strComponentName&Sequence_1",
+        "boolPreCondition&Sequence_4",
+        "boolPostCondition&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Argument",
+        "out_Argument",
+        "in_IntDefaultTimeoutL",
+        "in_IntDefaultTimeoutM",
+        "in_IntDefaultTimeoutS",
+        "in_IntDefaultDelay"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/Init Applications/Read Input File.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strInputFilePath&Sequence_12",
+        "strMoviesDataTable&Sequence_12",
+        "strComponentName&Sequence_12"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strInputFilePath",
+        "out_dtMovies"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/Init Applications/Sign In To IMDb.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPostCondition&Sequence_16",
+        "boolPreCondition&Sequence_15",
+        "strComponentName&Sequence_7",
+        "variable1&Sequence_2",
+        "strPassword&Sequence_4",
+        "strUsername&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_boolSignInStatus",
+        "in_strIMDBCredentials"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Process Films.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "drCurrentMovie&Flowchart_1",
+        "boolMovieExists&Flowchart_1",
+        "intMovieIndex&Flowchart_1",
+        "boolIsRated&Flowchart_1",
+        "strDescription&Flowchart_1",
+        "strCategories&Flowchart_1",
+        "strDirectors&Flowchart_1",
+        "strWriters&Flowchart_1",
+        "strStars&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_dtMoviesReport",
+        "in_boolSignInStatus"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/Init Applications/Create Final Report.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPostCondition&Sequence_11",
+        "strComponentName&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dtMoviesReport",
+        "in_dtMovies"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/Close Applications/Send Outlook Message.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFinalReportPath&Sequence_19",
+        "strComponentName&Sequence_15",
+        "boolPreCondition&Sequence_16"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strAttachament",
+        "in_strSubject",
+        "in_strBody",
+        "in_strEmailAdress"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/Process Films/Extract Movie Details.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPreCondition&Sequence_39",
+        "WritersIndex&Sequence_31",
+        "CategoriesIndex&Sequence_29",
+        "StarsIndex&Sequence_28",
+        "DirectorsIndex&Sequence_30",
+        "UiChildrenDirectors&Sequence_17",
+        "UiChildrenWriters&Sequence_17",
+        "UiChildrenCategories&Sequence_17",
+        "UiChildrenStars&Sequence_17",
+        "strChildText&Sequence_17",
+        "strComponentName&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_strStars",
+        "in_boolIsRated",
+        "out_strWriters",
+        "out_strDirectors",
+        "out_strDescription",
+        "out_strCategories"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Close Applications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strAttachament&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strBody",
+        "in_strFinalReportPath",
+        "in_strSubject",
+        "in_strEmailAdress",
+        "in_dtMoviesReport"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/Init Applications/Navigate To IMDb.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strComponentName&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_boolSignInStatus"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/Process Films/Rate Movie.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "intGrade&Sequence_6",
+        "strComponentName&Sequence_2",
+        "boolPostCondition&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_boolIsRated",
+        "in_intMovieIndex",
+        "in_dtMoviesReport",
+        "io_drCurrentMovie"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/Process Films/Find Movie.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPostCondition&Sequence_14",
+        "strComponentName&Sequence_2",
+        "boolPreCondition&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_drCurrentMovie",
+        "io_dtMoviesReport",
+        "in_intMovieIndex",
+        "out_boolMovieExists",
+        "in_boolSignInStatus"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/Process Films/BE Movie Not Found.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strComponentName&Sequence_2",
+        "boolPreCondition&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_drCurrentMovie",
+        "in_boolMovieExists"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/Process Films/Write Movie Details.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPostCondition&Sequence_8",
+        "strComponentName&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strWriters",
+        "in_strDirectors",
+        "in_strStars",
+        "in_strDescription",
+        "in_strCategories",
+        "io_drCurrentMovie"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/Close Applications/Save Final Report.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFinalReportPath&Sequence_6",
+        "strComponentName&Sequence_6",
+        "boolPostCondition&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_strAttachament",
+        "in_dtMoviesReport",
+        "in_strFinalReportPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
